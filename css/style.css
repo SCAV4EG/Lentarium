@@ -1,0 +1,118 @@
+/* Одинаковый расчёт размеров для всех элементов */ 
+*, *::before, *::after {
+    box-sizing:border-box;
+}
+
+/* Назначение шрифтов */
+@font-face{
+    font-family: "Unbounded";
+    src: url("../fonts/Unbounded-Variable.woff2") format(woff2);
+    font-weight: 200 900;
+    font-display: swap;
+}
+@font-face{
+    font-family: "Inter";
+    src: url("../fonts/Inter-Italic-VariableFont_opsz\,wght.ttf") format(ttf);
+    font-weight: 200 500;
+    font-display: swap;
+}
+/* Цвета */
+:root{
+    --bg: #fafafa;
+    --bg2: #eaeaea;
+    --text: #1a1b23;
+    --primary: #4b1075;
+    --accent: #b3ff00;
+    --alert: #ff5500;
+}
+/* Оформление шрифтов */
+h1, h2, h3{font-family: "Unbounded", Arial, sans-serif; font-weight: 500;}
+p{font-family: "Inter", Arial, sans-serifl; font-weight: 400;}
+header{font-family: "Unbounded", Arial, sans-serif; font-weight: 300;}
+
+body{
+    margin: 0;
+    line-height: 1.5;
+    color: var(--text);
+    background: var(--bg);
+    }
+
+/* Картинки не выходят за контейнер */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Шапка: логотип слева, меню справа */
+header{
+    background: var(--primary);
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 24px;
+    border-bottom: 1px solid #ddd;
+}
+
+nav{
+    color: var(--text);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+/* Центральная колонка */
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+/* Подвал */
+footer{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+    color: #666
+    font-size: 14px;
+}
+
+footer p {
+  font-family: inherit;
+}
+
+ /* Правильное отображение ссылок*/
+a{
+    color:var(--primary);
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: var(-accent);
+}
+
+/* Прокрутка */
+
+a:focus-visible {
+  outline: 3px solid var(--alert);
+  outline-offset: 3px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Размер на ПК */
+html {
+  font-size: 100%;
+}
+
+main {
+  max-width: 40rem;
+}
