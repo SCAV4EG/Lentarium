@@ -17,8 +17,86 @@
             </nav>
         </header>
 
-        <main>
+        <main class="main--wide">
             <h1> Лента новостей</h1>
+
+            <form class="news-filters">
+                <label>Рубрика
+                    <select>
+                        <option>Все</option>
+                        <option>Экономика</option>
+                        <option>Общество</option>
+                        <option>Инфраструктура</option>
+                        <option>В мире</option>                        
+                    </select>
+                </label>
+                <label>Сортировка
+                    <select>
+                        <option>Сначала новые</option>
+                        <option>Сначала старые</option>
+                    </select>
+                </label>
+                <label>Дата <input type="date"></label>
+            </form>
+
+            <div class="news-grid">
+                <article class="news-card">
+                <article class="news-card news-card--photo">
+                    <img src="images/ITMainline14032031.jpg" alt="Сервер ЦОД">
+                    <div class="news-content">
+                        <p><time datetime="2031-03-14">14 марта 2031</time> · Инфраструктура</p>
+                        <h2>Магистраль «Квантовый Пояс» связала дата-центры Сибири и Урала</h2>
+                        <p>Корпорация «РосИнфоСеть» отчиталась о завершении прокладки первой в мире коммерческой линии связи на ультрастабильных кубитах</p>
+                        <a href="#">Читать далее>>></a>
+                    </div>
+                </article>
+                </article>
+                <article class="news-card news-card--photo">
+                    <img src="images/IndiaPakistan22042031.jpg" alt="Флаг Индии и Пакистана">
+                    <div class="news-content">
+                        <p><time datetime="2031-04-22">22 апреля 2031</time> · В мире</p>
+                        <h2>Водный кризис в Южной Азии: Нью-Дели и Исламабад садятся за стол переговоров</h2>
+                        <p>Резкое обмеление трансграничных рек из-за аномальной засухи вынудило ядерные державы начать экстренный саммит</p>
+                        <a href="#">Читать далее>>></a>
+                    </div>
+                </article>
+                <article class="news-card news-card--photo">
+                    <img src="images/Kazan03052031.jpg" alt="мечеть Кул-Шариф">
+                    <div class="news-content">
+                        <p><time datetime="2031-05-03">3 мая 2031</time> · Общество</p>
+                        <h2>Эксперимент по безусловному базовому доходу в Казани признан успешным</h2>
+                        <p>Министерство труда опубликовало итоговый отчет по трехлетнему пилотному проекту автоматических выплат гражданам</p>
+                        <a href="#">Читать далее>>></a>
+                    </div>
+                </article>
+                <article class="news-card news-card--photo">
+                    <img src="images/VirtualCurrency19062031.jpg" alt="Цифровая валюта">
+                    <div class="news-content">
+                        <p><time datetime="2031-06-19">19 июня 2031</time> · Экономика</p>
+                        <h2>Эра «редкоземельного стандарта»: Андская группа вводит новую расчетную единицу</h2>
+                        <p>Чили, Перу и Боливия объявили о создании единой цифровой валюты, привязанной к запасам лития и меди</p>
+                        <a href="#">Читать далее>>></a>
+                    </div>
+                </article>
+                <article class="news-card news-card--photo">
+                    <img src="images/AutomotiveIndustry08082031.jpg" alt="Автомобильная промышленность">
+                    <div class="news-content">
+                        <p><time datetime="2031-08-08">8 августа 2031</time> · Аналитика</p>
+                        <h2>Закат классического автопрома: почему конвейеры Европы останавливаются</h2>
+                        <p>Аналитический центр «Лентариум» разбирается в причинах системного кризиса европейских автомобильных гигантов.</p>
+                        <a href="#">Читать далее>>></a>
+                    </div>
+                </article>
+                <article class="news-card news-card--photo">
+                    <img src="images/ModernizaciaLEP17102031.jpg" alt="Опоры ЛЭП на закате">
+                    <div class="news-content">
+                        <p><time datetime="2031-10-17">17 октября 2031</time> · Инфраструктура</p>
+                        <h2>Модернизация национальных ЛЭП продлится до 2047 года</h2>
+                        <p>Минэнерго запускает 16-летнюю программу полной перестройки электросетевого комплекса страны.</p>
+                        <a href="article.html">Читать далее>>></a>
+                    </div>
+                </article>
+            </div>
         </main>
 
         <footer>
