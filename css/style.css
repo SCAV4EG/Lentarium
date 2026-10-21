@@ -194,3 +194,42 @@ main {
 .main--wide {
   max-width: 64rem;
 }
+
+/* Баннер артикля */
+.article-banner {
+  display: grid;
+  margin-bottom: 24px;
+}
+
+.article-banner > * {
+  grid-area: 1 / 1;
+}
+
+.article-banner img {
+  width: 100%;
+  height: 100%;
+  min-height: 280px;
+  object-fit: cover;
+}
+
+.article-banner__text {
+  align-self: end;
+  padding: 16px;
+  color: #fff;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+}
+
+/* Новостные теги */
+.tag {
+  background: var(--accent);
+  color: var(--text);
+  padding: 2px 8px;
+  font-size: 0.875rem;
+}
+
+.warntag {
+  background: var(--alert);
+  color: var(--text);
+  padding: 2px 8px; 
+  font-size: 0.875rem;
+}
