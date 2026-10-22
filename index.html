@@ -1,38 +1,210 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <heaad>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Лентариум - главные новости</title>
-        <link rel="stylesheet" href="css/style.css"
-    </heaad>
-    <body>
-        <header>
-            <a href="index.html">Лентариум</a>
-            <nav>
-                <a href="index.html">Главная</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lentarium — Главные новости</title>
+    <!-- Фавиконка в формате SVG -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <!-- Подключение основной таблицы стилей -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта: логотип и главная навигация -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="Логотип Lentarium" class="logo-icon">
+                <span class="logo-text">Lentarium</span>
+            </a>
+            <nav class="main-nav" aria-label="Основная навигация">
+                <a href="index.html" class="active">Главная</a>
                 <a href="news.html">Лента</a>
                 <a href="favorites.html">Избранное</a>
                 <a href="contacts.html">Контакты</a>
+                <a href="about.html">О проекте</a>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <main>
-            <h1> Главные новости</h1>
+    <main class="main--wide">
+        <!-- Блок назначения сайта по ТЗ -->
+        <section class="site-intro">
+            <h2>«Лентариум» — хроника технологий и событий будущего</h2>
+            <p>Учебный новостной портал: главные события, аналитика, тематические рубрики и архив по датам. Все материалы являются вымышленными.</p>
+        </section>
 
-            <article>
-                <header class="article-banner">
-                    <img src="images/ModernizaciaLEP17102031.jpg" alt="Призраки прошлого">
-                    <div class="article-banner__text">
-                        <p><span class="tag"> · Инфраструктура</span> <time datetime="2031-10-17">17 октября 2031</time></p>
-                        <h2>Модернизация национальных ЛЭП продлится до 2047 года</h2>
+        <h1>Главные новости</h1>
+
+        <!-- Главная новость (Hero-баннер) со ссылкой на articles/0001.html -->
+        <article class="article-banner">
+            <img src="images/ModernizaciaLEP17102031.jpg" alt="Опоры высоковольтных ЛЭП на закате">
+            <div class="article-banner__text">
+                <p>
+                    <span class="tag">Инфраструктура</span> 
+                    <time datetime="2031-10-17">17 октября 2031</time>
+                </p>
+                <h2><a href="articles/0001.html">Модернизация национальных ЛЭП продлится до 2047 года</a></h2>
+            </div>
+        </article>
+
+        <!-- Подборка из 6 свежих позиций по ТЗ с переходами на статьи -->
+        <section>
+            <h2>Свежие материалы</h2>
+            <div class="news-grid">
+                
+                <!-- Карточка 1 -> articles/0002.html -->
+                <article class="news-card">
+                    <div class="news-card__media">
+                        <img src="images/GosuslugiZnakomstva14022030.jpeg" alt="Платформа Госуслуги.Знакомства">
                     </div>
-                </header>
-            </article>
-        </main>
+                    <div class="news-card__body">
+                        <div class="news-card__meta">
+                            <span class="tag">Общество</span>
+                            <time datetime="2030-02-14">14 февраля 2030</time>
+                        </div>
+                        <h3 class="news-card__title">
+                            <a href="articles/0002.html">Демографический прорыв: Минцифры запускает «Госуслуги.Знакомства»</a>
+                        </h3>
+                        <p class="news-card__text">
+                            В России заработал первый государственный сервис по подбору партнеров для создания семьи, интегрированный с системой здравоохранения.
+                        </p>
+                        <div class="news-card__footer">
+                            <a href="articles/0002.html" class="read-more">Читать далее &gt;&gt;&gt;</a>
+                        </div>
+                    </div>
+                </article>
 
-        <footer>
-            <p>© Лентариум, учебный проект. Материалы вымышлены</p>
-        </footer>
-    </body>
+                <!-- Карточка 2 -> articles/0003.html -->
+                <article class="news-card">
+                    <div class="news-card__media">
+                        <img src="images/ITMainline14032031.jpg" alt="Серверная стойка дата-центра">
+                    </div>
+                    <div class="news-card__body">
+                        <div class="news-card__meta">
+                            <span class="tag">Инфраструктура</span>
+                            <time datetime="2031-03-14">14 марта 2031</time>
+                        </div>
+                        <h3 class="news-card__title">
+                            <a href="articles/0003.html">Магистраль «Квантовый Пояс» связала дата-центры Сибири и Урала</a>
+                        </h3>
+                        <p class="news-card__text">
+                            Корпорация «РосИнфоСеть» завершила прокладку первой коммерческой квантовой линии связи с абсолютной защитой данных.
+                        </p>
+                        <div class="news-card__footer">
+                            <a href="articles/0003.html" class="read-more">Читать далее &gt;&gt;&gt;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Карточка 3 -> articles/0004.html (Срочная новость ВАЖНО) -->
+                <article class="news-card">
+                    <div class="news-card__media">
+                        <img src="images/IndiaPakistan22042031.jpg" alt="Флаги Индии и Пакистана на фоне засухи">
+                    </div>
+                    <div class="news-card__body">
+                        <div class="news-card__meta">
+                            <span class="tag">В мире</span>
+                            <span class="warntag">ВАЖНО</span>
+                            <time datetime="2031-04-22">22 апреля 2031</time>
+                        </div>
+                        <h3 class="news-card__title">
+                            <a href="articles/0004.html">Водный кризис в Азии: Дели и Исламабад начали переговоры</a>
+                        </h3>
+                        <p class="news-card__text">
+                            Резкое обмеление трансграничных рек из-за аномальной засухи вынудило страны сесть за стол экстренных консультаций.
+                        </p>
+                        <div class="news-card__footer">
+                            <a href="articles/0004.html" class="read-more">Читать далее &gt;&gt;&gt;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Карточка 4 -> articles/0005.html -->
+                <article class="news-card">
+                    <div class="news-card__media">
+                        <img src="images/Kazan03052031.jpg" alt="Вид на город Казань">
+                    </div>
+                    <div class="news-card__body">
+                        <div class="news-card__meta">
+                            <span class="tag">Общество</span>
+                            <time datetime="2031-05-03">3 мая 2031</time>
+                        </div>
+                        <h3 class="news-card__title">
+                            <a href="articles/0005.html">Эксперимент по базовому доходу в Казани признан успешным</a>
+                        </h3>
+                        <p class="news-card__text">
+                            Трехлетний пилотный проект автоматических безусловных выплат гражданам показал рост локального предпринимательства.
+                        </p>
+                        <div class="news-card__footer">
+                            <a href="articles/0005.html" class="read-more">Читать далее &gt;&gt;&gt;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Карточка 5 -> articles/0006.html -->
+                <article class="news-card">
+                    <div class="news-card__media">
+                        <img src="images/VirtualCurrency19062031.jpg" alt="Символ цифровой валюты">
+                    </div>
+                    <div class="news-card__body">
+                        <div class="news-card__meta">
+                            <span class="tag">Экономика</span>
+                            <time datetime="2031-06-19">19 июня 2031</time>
+                        </div>
+                        <h3 class="news-card__title">
+                            <a href="articles/0006.html">Эра «редкоземельного стандарта»: новая расчетная единица</a>
+                        </h3>
+                        <p class="news-card__text">
+                            Чили, Перу и Боливия объявили о вводе единого цифрового токена, привязанного к подтвержденным запасам лития.
+                        </p>
+                        <div class="news-card__footer">
+                            <a href="articles/0006.html" class="read-more">Читать далее &gt;&gt;&gt;</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Карточка 6 -> articles/0007.html -->
+                <article class="news-card">
+                    <div class="news-card__media">
+                        <img src="images/AutomotiveIndustry08082031.jpg" alt="Роботизированный автомобильный конвейер">
+                    </div>
+                    <div class="news-card__body">
+                        <div class="news-card__meta">
+                            <span class="tag">Аналитика</span>
+                            <time datetime="2031-08-08">8 августа 2031</time>
+                        </div>
+                        <h3 class="news-card__title">
+                            <a href="articles/0007.html">Закат классического автопрома: остановка конвейеров Европы</a>
+                        </h3>
+                        <p class="news-card__text">
+                            Аналитический центр разбирается в причинах кризиса автогигантов и переходе на автономные капсулы по подписке.
+                        </p>
+                        <div class="news-card__footer">
+                            <a href="articles/0007.html" class="read-more">Читать далее &gt;&gt;&gt;</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+            
+            <div class="center-action">
+                <a href="news.html" class="btn btn-primary">Перейти ко всей ленте новостей (14 материалов) →</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>© 2026 Lentarium. Учебный проект по веб-разработке (Вариант 20, гр. ЗН251). Материалы вымышлены.</p>
+            <div class="footer-links">
+                <a href="about.html">О проекте</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>

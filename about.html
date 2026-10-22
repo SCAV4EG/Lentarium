@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lentarium — О проекте</title>
+    <!-- Фавиконка в формате SVG -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <!-- Подключение основной таблицы стилей -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="Логотип Lentarium" class="logo-icon">
+                <span class="logo-text">Lentarium</span>
+            </a>
+            <nav class="main-nav" aria-label="Основная навигация">
+                <a href="index.html">Главная</a>
+                <a href="news.html">Лента</a>
+                <a href="favorites.html">Избранное</a>
+                <a href="contacts.html">Контакты</a>
+                <a href="about.html" class="active">О проекте</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>О проекте «Лентариум»</h1>
+
+        <section class="site-intro">
+            <h2>Учебный новостной портал технологий и общества будущего</h2>
+            <p>Проект разработан в рамках серии практических работ по курсу веб-разработки (ПР 1 — HTML5 и CSS3).</p>
+        </section>
+
+        <article class="article-content">
+            <h3>Концепция издания</h3>
+            <p>
+                «Лентариум» — это концептуальное новостное медиа, моделирующее информационную повестку 2030-х годов: развитие искусственного интеллекта, квантовых коммуникаций, реформы энергетики и изменения в обществе. Все публикации, персоны и события в учебной версии сайта вымышлены автором.
+            </p>
+
+            <h3>Информация об авторе и задании</h3>
+            <div class="project-author-box">
+                <p class="author-item"><strong>Вариант задания:</strong> Вариант 20 (группа В: новостной сайт с рубриками, архивом и избранным)</p>
+                <p class="author-item"><strong>Автор:</strong> Борненко Глеб Петрович</p>
+                <p class="author-item"><strong>Учебная группа:</strong> ЗН251</p>
+                <p class="author-item"><strong>Учебное заведение:</strong> БГТУ «ВОЕНМЕХ» им. Д.Ф. Устинова</p>
+            </div>
+
+            <h3>Этапы реализации проекта</h3>
+            <ul>
+                <li><strong>Практическая работа 1 (текущая):</strong> семантическая разметка HTML5, оформление стилей CSS3 (Flexbox/Grid), адаптивность 360px+, варианты новостных карточек, навигация.</li>
+                <li><strong>Практическая работа 2:</strong> клиентская валидация форм, интерактивные фильтры и сортировка ленты, интеграция виджетов.</li>
+                <li><strong>Практическая работа 3:</strong> бэкенд на Python (FastAPI), база данных SQLite, хранилище новостей, регистрация пользователей и серверное избранное.</li>
+                <li><strong>Практическая работа 4:</strong> контейнеризация Docker, развертывание на хостинге, SSL/HTTPS.</li>
+            </ul>
+
+            <div class="about-actions">
+                <a href="news.html" class="btn btn-primary">Перейти в ленту новостей</a>
+                <a href="contacts.html" class="btn btn-outline">Связаться с автором</a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>© 2026 Lentarium. Учебный проект по веб-разработке (Вариант 20, гр. ЗН251). Материалы вымышлены.</p>
+            <div class="footer-links">
+                <a href="about.html">О проекте</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

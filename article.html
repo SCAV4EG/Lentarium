@@ -1,37 +1,130 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <heaad>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Лентариум - статья</title>
-        <link rel="stylesheet" href="css/style.css"
-    </heaad>
-    <body>
-        <header>
-            <a href="index.html">Лентариум</a>
-            <nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lentarium — Демографический прорыв: Минцифры запускает «Госуслуги.Знакомства»</title>
+    <!-- Фавиконка в формате SVG -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <!-- Подключение основной таблицы стилей -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="Логотип Lentarium" class="logo-icon">
+                <span class="logo-text">Lentarium</span>
+            </a>
+            <nav class="main-nav" aria-label="Основная навигация">
                 <a href="index.html">Главная</a>
                 <a href="news.html">Лента</a>
                 <a href="favorites.html">Избранное</a>
                 <a href="contacts.html">Контакты</a>
+                <a href="about.html">О проекте</a>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <main>
-            <article>
-                <header class="article-banner">
-                    <img src="images/GosuslugiZnakomstva14022030.jpeg" alt="Сервис Госуслуги.Знакомства">
-                    <div class="article-banner__text">
-                        <p><span class="tag"> · Общество</span> <time datetime="2030-02-14">14 февраля 2030</time></p>
-                        <h1>Демографический прорыв: Минцифры запускает платформу «Госуслуги.Знакомства»</h1>
+    <main>
+        <!-- Навигация возврата -->
+        <div class="back-navigation">
+            <a href="news.html" class="read-more">← Вернуться в ленту новостей</a>
+        </div>
+
+        <article>
+            <!-- Баннер публикации -->
+            <header class="article-banner">
+                <img src="images/GosuslugiZnakomstva14022030.jpeg" alt="Платформа Госуслуги.Знакомства на мобильном устройстве">
+                <div class="article-banner__text">
+                    <p>
+                        <span class="tag">Общество</span>
+                        <time datetime="2030-02-14">14 февраля 2030</time>
+                    </p>
+                    <h1>Демографический прорыв: Минцифры запускает платформу «Госуслуги.Знакомства»</h1>
+                </div>
+            </header>
+
+            <!-- Панель ключевых показателей и характеристик по ТЗ -->
+            <div class="article-meta-panel">
+                <div>
+                    <strong>Рубрика:</strong> Общество &nbsp;|&nbsp; 
+                    <strong>Время чтения:</strong> ~3 мин &nbsp;|&nbsp; 
+                    <strong>Охват:</strong> 42 тыс. просмотров
+                </div>
+                <div>
+                    <!-- Кнопка действия (добавление в избранное) -->
+                    <a href="favorites.html" class="btn btn-accent" title="Сохранить в избранное">
+                        ★ В избранное
+                    </a>
+                </div>
+            </div>
+
+            <!-- Текст публикации с лид-абзацем -->
+            <div class="article-content">
+                <p class="article-lead">
+                    В России заработал первый государственный сервис по подбору партнеров для создания семьи, полностью интегрированный с Единой медицинской информационно-аналитической системой (ЕМИАС).
+                </p>
+
+                <p>
+                    В отличие от коммерческих приложений прошлых десятилетий, доступ к платформе открывается только после прохождения комплексного медицинского скрининга, включая тесты на ВИЧ, оценку генетической совместимости и расширенный психологический профиль. Финальное одобрение анкеты и верификацию кандидатов проводит участковый терапевт в ходе личного собеседования в районной поликлинике.
+                </p>
+
+                <p>
+                    В профильном ведомстве корреспонденту «Лентариума» пояснили, что нейросетевые алгоритмы платформы подбирают пары на основе максимального совпадения биометрических и психосоциальных маркеров для рождения здорового потомства. Молодоженам, заключившим брак через государственный сервис, правительство обещает льготную цифровую ипотеку под 1.5% годовых в крипторублях.
+                </p>
+
+                <p>
+                    Первые центры консультаций и очных экспресс-знакомств уже открылись в Москве, Санкт-Петербурге и Казани на базе флагманских центров «Мои документы».
+                </p>
+            </div>
+
+            <!-- Источник и выходные данные -->
+            <footer class="article-source">
+                <p><strong>Источник:</strong> Пресс-служба Минцифры РФ / Аналитический бюллетень «Лентариум»</p>
+                <p><strong>Автор материала:</strong> Сектор социальных технологий</p>
+            </footer>
+        </article>
+
+        <!-- Блок «Читайте также» -->
+        <section class="related-section">
+            <h3>Материалы по теме: Общество</h3>
+            <div class="related-list">
+                <article class="related-card">
+                    <img src="images/Kazan03052031.jpg" alt="Казань" class="related-card__img">
+                    <div>
+                        <time datetime="2031-05-03" class="related-card__time">3 мая 2031</time>
+                        <h4 class="related-card__title">
+                            <a href="article.html">Эксперимент по безусловному базовому доходу в Казани признан успешным</a>
+                        </h4>
                     </div>
-                </header>
+                </article>
 
-                <p>В отличие от коммерческих приложений, доступ к платформе открывается только после прохождения комплексного медицинского скрининга, включая тесты на ВИЧ, генетические совместимости и расширенный психологический профиль. Финальное одобрение анкеты и верификацию кандидатов проводит участковый терапевт в ходе личного собеседения. В профильном ведомстве Лентариуму пояснили, что алгоритмы ИИ подбирают пары на основе максимального совпадения для рождения здорового потомства, а молодоженам, сошедшимся через сервис, обещают льготную цифровую ипотеку.</p>
-            </article>
-        </main>
-        <footer>
-            <p>© Лентариум, учебный проект. Материалы вымышлены</p>
-        </footer>
-    </body>
+                <article class="related-card">
+                    <img src="images/KyberNasledstvo17012033.jpeg" alt="Цифровое завещание" class="related-card__img">
+                    <div>
+                        <time datetime="2033-01-17" class="related-card__time">17 января 2033</time>
+                        <h4 class="related-card__title">
+                            <a href="article.html">«Цифровое завещание» стало обязательным пунктом при оформлении госуслуг</a>
+                        </h4>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>© 2026 Lentarium. Учебный проект по веб-разработке (Вариант 20, гр. ЗН251). Материалы вымышлены.</p>
+            <div class="footer-links">
+                <a href="about.html">О проекте</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>

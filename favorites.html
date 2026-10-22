@@ -1,28 +1,127 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <heaad>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Лентариум - избранное</title>
-        <link rel="stylesheet" href="css/style.css"
-    </heaad>
-    <body>
-        <header>
-            <a href="index.html">Лентариум</a>
-            <nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lentarium — Избранные новости</title>
+    <!-- Фавиконка в формате SVG -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <!-- Подключение основной таблицы стилей -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="Логотип Lentarium" class="logo-icon">
+                <span class="logo-text">Lentarium</span>
+            </a>
+            <nav class="main-nav" aria-label="Основная навигация">
                 <a href="index.html">Главная</a>
                 <a href="news.html">Лента</a>
-                <a href="favorites.html">Избранное</a>
+                <a href="favorites.html" class="active">Избранное (3)</a>
                 <a href="contacts.html">Контакты</a>
+                <a href="about.html">О проекте</a>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <main>
-            <h1> Избранные новости</h1>
-        </main>
+    <main>
+        <div class="favorites-header">
+            <h1>Избранные материалы</h1>
+            <span class="favorites-header__hint">
+                * Примерные данные (в ПР 3 будет подключено хранилище данных и авторизация)
+            </span>
+        </div>
 
-        <footer>
-            <p>© Лентариум, учебный проект. Материалы вымышлены</p>
-        </footer>
-    </body>
+        <p>Список публикаций, сохраненных для отложенного чтения. Вы можете быстро перейти к материалу или удалить его из списка.</p>
+
+        <!-- Список сохраненных материалов с кнопками «Убрать» по ТЗ -->
+        <div class="favorites-list">
+
+            <!-- Позиция 1 в избранном -> articles/0002.html -->
+            <article class="favorite-item">
+                <img src="images/GosuslugiZnakomstva14022030.jpeg" alt="Госуслуги.Знакомства">
+                <div class="favorite-item__info">
+                    <div class="favorite-item__meta">
+                        <span class="tag">Общество</span>
+                        <time datetime="2030-02-14" class="favorite-item__time">14 февраля 2030</time>
+                    </div>
+                    <h3 class="favorite-item__title">
+                        <a href="articles/0002.html">Демографический прорыв: Минцифры запускает платформу «Госуслуги.Знакомства»</a>
+                    </h3>
+                    <p class="favorite-item__excerpt">
+                        В России заработал первый государственный сервис по подбору партнеров для создания семьи...
+                    </p>
+                </div>
+                <div class="favorite-item__actions">
+                    <a href="articles/0002.html" class="btn btn-primary favorite-item__btn-read">Читать</a>
+                    <button type="button" class="btn btn-danger" title="Убрать из списка (интерфейс ПР 1)">Убрать ✕</button>
+                </div>
+            </article>
+
+            <!-- Позиция 2 в избранном -> articles/0001.html -->
+            <article class="favorite-item">
+                <img src="images/ModernizaciaLEP17102031.jpg" alt="Модернизация ЛЭП">
+                <div class="favorite-item__info">
+                    <div class="favorite-item__meta">
+                        <span class="tag">Инфраструктура</span>
+                        <time datetime="2031-10-17" class="favorite-item__time">17 октября 2031</time>
+                    </div>
+                    <h3 class="favorite-item__title">
+                        <a href="articles/0001.html">Модернизация национальных ЛЭП продлится до 2047 года</a>
+                    </h3>
+                    <p class="favorite-item__excerpt">
+                        Минэнерго запускает 16-летнюю программу полной перестройки электросетевого комплекса страны...
+                    </p>
+                </div>
+                <div class="favorite-item__actions">
+                    <a href="articles/0001.html" class="btn btn-primary favorite-item__btn-read">Читать</a>
+                    <button type="button" class="btn btn-danger" title="Убрать из списка (интерфейс ПР 1)">Убрать ✕</button>
+                </div>
+            </article>
+
+            <!-- Позиция 3 в избранном -> articles/0007.html -->
+            <article class="favorite-item">
+                <img src="images/AutomotiveIndustry08082031.jpg" alt="Автомобильная промышленность">
+                <div class="favorite-item__info">
+                    <div class="favorite-item__meta">
+                        <span class="tag">Аналитика</span>
+                        <time datetime="2031-08-08" class="favorite-item__time">8 августа 2031</time>
+                    </div>
+                    <h3 class="favorite-item__title">
+                        <a href="articles/0007.html">Закат классического автопрома: почему конвейеры Европы останавливаются</a>
+                    </h3>
+                    <p class="favorite-item__excerpt">
+                        Аналитический центр «Лентариум» разбирается в причинах системного кризиса европейских гигантов...
+                    </p>
+                </div>
+                <div class="favorite-item__actions">
+                    <a href="articles/0007.html" class="btn btn-primary favorite-item__btn-read">Читать</a>
+                    <button type="button" class="btn btn-danger" title="Убрать из списка (интерфейс ПР 1)">Убрать ✕</button>
+                </div>
+            </article>
+
+        </div>
+
+        <div class="favorites-footer-actions">
+            <a href="news.html" class="read-more">← Добавить больше новостей из ленты</a>
+            <button type="button" class="btn btn-outline btn-clear-favorites">Очистить все избранное</button>
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>© 2026 Lentarium. Учебный проект по веб-разработке (Вариант 20, гр. ЗН251). Материалы вымышлены.</p>
+            <div class="footer-links">
+                <a href="about.html">О проекте</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>

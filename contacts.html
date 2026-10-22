@@ -1,29 +1,117 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <heaad>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Лентариум - обратная связь</title>
-        <link rel="stylesheet" href="css/style.css"
-    </heaad>
-    <body>
-        <header>
-            <a href="index.html">Лентариум</a>
-            <nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lentarium — Контакты и обратная связь</title>
+    <!-- Фавиконка в формате SVG -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <!-- Подключение основной таблицы стилей -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.svg" alt="Логотип Lentarium" class="logo-icon">
+                <span class="logo-text">Lentarium</span>
+            </a>
+            <nav class="main-nav" aria-label="Основная навигация">
                 <a href="index.html">Главная</a>
                 <a href="news.html">Лента</a>
                 <a href="favorites.html">Избранное</a>
-                <a href="contacts.html">Контакты</a>
+                <a href="contacts.html" class="active">Контакты</a>
+                <a href="about.html">О проекте</a>
             </nav>
-        </header>
+        </div>
+    </header>
 
-        <main>
-            <h1> Контакты</h1>
-            <p> Почта для связи: n254b20@voenmeh.su</p>
-        </main>
+    <main class="main--wide">
+        <h1>Контакты редакции</h1>
 
-        <footer>
-            <p>© Лентариум, учебный проект. Материалы вымышлены</p>
-        </footer>
-    </body>
+        <div class="contacts-wrapper">
+            <!-- Блок контактной информации по ТЗ -->
+            <section class="contact-card">
+                <h2>Редакция издания</h2>
+                
+                <!-- Слоган издания по ТЗ -->
+                <p class="slogan-quote">
+                    «Лентариум — независимый хроникер событий, аналитики и технологических трансформаций будущего»
+                </p>
+
+                <ul class="contact-list">
+                    <li>
+                        <strong>Адрес редакции:</strong>
+                        <span>140030, Московская область, Малаховка, улица Пушкина, дом Колотушкина, 47.</span>
+                    </li>
+                    <li>
+                        <strong>Контактный телефон:</strong>
+                        <a href="tel:+70000009988">+7 (000) 000-99-88</a>
+                    </li>
+                    <li>
+                        <strong>Электронная почта редакции:</strong>
+                        <a href="mailto:n254b20@voenmeh.su">n254b20@voenmeh.su</a>
+                    </li>
+                    <li>
+                        <strong>Режим работы:</strong>
+                        <span>Понедельник — Пятница: с 09:00 до 18:00 (МСК)<br>Суббота, Воскресенье — выходные</span>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Форма обратной связи по ТЗ (разметка для ПР 1, валидация и отправка заработают в ПР 2) -->
+            <section>
+                <form class="feedback-form" action="#" method="post" onsubmit="return false;">
+                    <h2>Форма обратной связи</h2>
+                    <p class="feedback-hint">
+                        * Элементы формы размечены для ПР 1. Обработка отправки и JS-валидация будут подключены в ПР 2.
+                    </p>
+
+                    <div class="form-field">
+                        <label for="feedback-name">Ваше имя *</label>
+                        <input type="text" id="feedback-name" name="name" required placeholder="Например: Иван Иванов">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="feedback-email">Электронная почта *</label>
+                        <input type="email" id="feedback-email" name="email" required placeholder="ivanov@example.com">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="feedback-topic">Тема обращения</label>
+                        <select id="feedback-topic" name="topic">
+                            <option value="news">Предложение инфоповода / новости</option>
+                            <option value="question">Вопрос главному редактору</option>
+                            <option value="partnership">Сотрудничество и партнерство</option>
+                            <option value="error">Сообщить об ошибке или неточности</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="feedback-message">Текст сообщения *</label>
+                        <textarea id="feedback-message" name="message" rows="5" required placeholder="Опишите суть вашего вопроса или предложения..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary feedback-submit-btn">
+                        Отправить сообщение
+                    </button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>© 2026 Lentarium. Учебный проект по веб-разработке (Вариант 20, гр. ЗН251). Материалы вымышлены.</p>
+            <div class="footer-links">
+                <a href="about.html">О проекте</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>
